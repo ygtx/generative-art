@@ -1,4 +1,4 @@
-package tech.yagi.generativeart.impl;
+package tech.yagi.generativeart.impl.sectionI;
 
 import processing.core.*;
 

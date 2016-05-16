@@ -1,9 +1,9 @@
-package tech.yagi.generativeart.impl;
+package tech.yagi.generativeart.impl.section3;
 
 import processing.core.PApplet;
 
 
-public class Figure_0307 extends PApplet {
+public class Figure_0306 extends PApplet {
 
     public void settings() {
         size(500, 100);
@@ -22,38 +22,31 @@ public class Figure_0307 extends PApplet {
 
         background(255);
 
+        stroke(0, 30);
+        line(20, 50, 480, 50);
 
-        float stepX = 1;
+        stroke(20, 50, 70);
+        int step = 1;
+
         float lastX = -999;
         float lastY = -999;
-        float angle = 0;
-        float y = 50;
 
-        for (int x = 20; x <= 480; x += stepX ) {
+        float noiseY = random(10);
+        float y;
 
-            float rad = radians(angle);
-
-            // sin curve with random
-//            y = 50 + (pow(cos(rad), 3) * noise(rad * 2) * 30);
-
-            y = 20 + (customRandom() * 60);
-
+        for (int x = 2; x < 480; x += step) {
+            y = 10 + noise(noiseY) * 80;
             if (lastX > -999) {
                 line(x, y, lastX, lastY);
             }
-
             lastX = x;
             lastY = y;
 
-            angle++;
-
+            noiseY += 0.01;
         }
-    }
 
-    float customRandom() {
-        return 1 - pow(random(1), 0.299999f);
-    }
 
+    }
 
     public void mousePressed() {
         redraw();

@@ -1,4 +1,4 @@
-package tech.yagi.generativeart.impl;
+package tech.yagi.generativeart.impl.section3;
 
 import processing.core.PApplet;
 

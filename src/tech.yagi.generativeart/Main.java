@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String args[]) {
         // full-screen mode can be activated via parameters to PApplets main method.
-        PApplet.main(new String[] {"tech.yagi.generativeart.impl.section6.Figure_0605"});
+        PApplet.main(new String[] {"tech.yagi.generativeart.impl.section8.Figure_0805"});
     }
 
 }

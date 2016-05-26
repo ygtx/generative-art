@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Figure_0805 extends PApplet {
 
     public void settings() {
-        size(500, 500);
+        size(800, 800);
     }
 
     int _numChildren = 3;
